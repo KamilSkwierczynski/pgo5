@@ -6,11 +6,11 @@ public class Employee {
     String adres;
     String email;
     String pesel;
-    String rokZatrudnienia;
+    int rokZatrudnienia;
     static int baseSalary = 3000;
     static int everyYearBonus = 1000;
 
-    public Employee( String imie, String nazwisko, String adres, String email, String pesel, String rokZatrudnienia) {
+    public Employee(String imie, String nazwisko, String adres, String email, String pesel, int rokZatrudnienia) {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.adres = adres;
@@ -21,7 +21,7 @@ public class Employee {
     static int getCurrentYear() {
         return LocalDate.now().getYear();
     }
-    public int calculateSalary() {
+    int calculateSalary() {
         return baseSalary + (getCurrentYear() - rokZatrudnienia) * everyYearBonus;
     }
 

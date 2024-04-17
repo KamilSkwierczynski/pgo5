@@ -12,7 +12,7 @@ public class Goal {
     static int getCurrentMonth() {
         return LocalDate.now().getMonthValue();
     }
-    static int getCurrentYear( {
+    static int getCurrentYear() {
         return LocalDate.now().getYear();
     }
     boolean goalsAchived() {

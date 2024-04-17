@@ -9,10 +9,8 @@ public class Developer extends Employee{
     void addTechnology(Technology technology) {
         Technologies.add(technology);
     }
-    int salary(){
-        return super.calculateSalary() +
-                Technologies.stream()
-
+    int calculateSalary() {
+        return super.calculateSalary() + Technologies * 800;
 
     }
 }

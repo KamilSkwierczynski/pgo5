@@ -9,8 +9,7 @@ public class Program {
         dev.addTechnology(t);
         employees.add(dev);
 // Creating and adding testers
-        Tester tester = new Tester("Jane", "Smith", "Los
-                "Angeles", "jane@smith.com", "987654321", 2021);
+        Tester tester = new Tester("Jane", "Smith", "Los Angeles", "jane@smith.com", "987654321", 2021);
         tester.addTestType("UI/UX");
         employees.add(tester);
 // Creating and adding a manager
